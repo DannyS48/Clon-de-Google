@@ -1,0 +1,220 @@
+body {
+    /* margin - margen del elemento */
+    margin: 0;
+    /* padding - margen hacia adentro */
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 92%;
+}
+
+
+/* ************************************************** */
+/* *********************************************** */
+/* ******************************************* */
+/* NAVEGACIÓN */
+
+header {
+    /* width - ancho /// height-alto */
+    width: 98%;
+    height: 70%;
+}
+
+header nav{
+    /* Justificar a la derecha */
+    /* Nos habilita usar flex-end flex-start */
+    display: flex; 
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    height: auto;
+    /* Elimina puntitos */
+    list-style: none;
+    display: flex;
+     justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+}
+
+a {
+    /* Eliminar línea debajo de texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 16px;
+}
+
+/* Icono del menú */
+nav .nav-right-section .menu{
+    /* Agregar íconos desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemenento más grande */
+    background-size: contain;
+    width: 30%;
+    height: 80%;
+    /* Para que las imagenes no se repitan */
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuario */
+nav .nav-right-section img{
+/* Redondear bordes */
+border-radius: 100%;
+/* Cambiar tamaño de la imagen */
+width: 85%;
+height: 100%;
+margin-right: 8%;
+}
+
+/* ********************************* */
+/* ******************************** */
+/* ******************************* */
+/* MAIN */
+
+main {
+    /* Agregar espacio entre header y main */
+    width: 99%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 50%;
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical //horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 10%;
+    width: 40%;
+}
+
+main .main-input{
+    width: 50%;
+    /* Centrar absolutamente gracias a los márgenes automáticos  */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* ancho borde || borde-estilo || borde-color*/
+        border: 1px solid #dfe1e5;
+        border-radius: 50px;
+        width: 100%;
+        margin-top: 3%;
+}
+
+main .main-input input{
+    height: 40px;
+    /* Quitar el borde */
+    border: none;
+    /* Quitar el borde cuando está activo el input */
+    outline: none;
+    width: 80%;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 200%;
+    height: 20%;
+    margin-left: 2%;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 2%;
+    width: 20%;
+    height: 20%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+    margin-left: 2%;
+}
+/* ************ */
+main .main-botones {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+main .main-botones .main-botones-buscar{
+    width: 100%;
+    height: 150%;
+    margin-right: 70%;
+}
+
+main .main-botones .main-botones-suerte{
+    width: 100%;
+    height: 150%;
+    margin-left: 10%;
+
+}
+
+/* **************************************** */
+/* *************************************** */
+/* ************************************** */
+/* FOOTER */
+footer{
+    font-size: 110%;
+    width: 50%;
+    margin-top: 20%;
+    margin-left: 2%;
+}
+
+footer nav{
+    width: 50%;
+}
+
+nav .lista-izquierda {
+    list-style: none;
+    width: 300%;
+    height: auto;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 7%;
+}
+
+nav .lista-izquierda a{
+    margin-right: 18px;
+}
+
+nav .lista-izquierda a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(2, 8, 8);
+    height: 3px;
+    width: 100%;
+    left: 0;   
+    
+}
+nav .lista-derecha{
+    
+    font-size: 90%;
+    list-style: none;
+    display: flex;
+    width: 87%;
+    height: auto;
+    margin-left: 280%;
+    margin-top: -5%;
+
+}
+
+nav .lista-derecha a{
+    margin-right: 30px;
+}
+
